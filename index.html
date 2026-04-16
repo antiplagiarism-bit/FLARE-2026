@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILA Conference 2026 | University of Hyderabad</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Poppins',sans-serif;background:#f4f6f9;color:#222}
+header{background:linear-gradient(135deg,#0b3d91,#1a73e8);color:#fff;text-align:center;padding:30px}
+header h1{margin:0;font-size:28px}
+header h2{margin:10px 0 5px;font-weight:400}
+.hero{position:relative}
+.slider{position:relative;overflow:hidden}
+.slides{display:flex;transition:transform .5s ease}
+.slides img{width:100%;height:420px;object-fit:cover}
+.nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;padding:10px;cursor:pointer}
+.prev{left:10px}.next{right:10px}
+.poster{position:absolute;top:20%;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);color:#fff;padding:20px;border-radius:10px;text-align:center}
+section{padding:30px;max-width:1100px;margin:auto}
+h2{color:#0b3d91;border-bottom:2px solid #ddd;padding-bottom:5px}
+.card{background:#fff;padding:20px;margin:15px 0;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+ul{margin-left:20px}
+footer{background:#0b3d91;color:#fff;text-align:center;padding:15px;margin-top:20px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>72nd Indian Library Association International Conference</h1>
+<h2>Future Libraries: Advancing Research & Excellence (FLARE) 2026</h2>
+<p><b>Organised by University of Hyderabad</b></p>
+</header>
+
+<div class="hero">
+<div class="slider">
+<div class="slides" id="slides">
+<img src="photo.jpg">
+<img src="hyd1.jpg">
+<img src="hyd2.jpg">
+<img src="hyd3.jpg">
+</div>
+<button class="nav prev" onclick="moveSlide(-1)">❮</button>
+<button class="nav next" onclick="moveSlide(1)">❯</button>
+</div>
+<div class="poster">
+<h2>FLARE 2026</h2>
+<p>Libraries as Drivers of Sustainable Development</p>
+</div>
+</div>
+
+<section>
+<h2>Libraries and Sustainability Agenda</h2>
+<div class="card"><ul>
+<li>Green Libraries: Design, Energy Efficiency</li>
+<li>Libraries & Sustainable Development Goals</li>
+<li>Digital Preservation & Sustainability</li>
+<li>Carbon-Neutral Library Operations</li>
+<li>AI & Smart Libraries for Sustainability</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Digital Transformation in Libraries</h2>
+<div class="card"><ul>
+<li>Artificial Intelligence & Machine Learning</li>
+<li>Cloud-based Library Services</li>
+<li>Semantic Web (RDF, Linked Data)</li>
+<li>Big Data & Blockchain</li>
+<li>AR/VR & IoT in Smart Libraries</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Scholarly Communication & Open Science</h2>
+<div class="card"><ul>
+<li>Open Access & Open Science</li>
+<li>Research Data Management</li>
+<li>Institutional Repositories</li>
+<li>Bibliometrics & Altmetrics</li>
+<li>Academic Integrity & Plagiarism</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Capacity Building & Policy</h2>
+<div class="card"><ul>
+<li>Leadership & Governance</li>
+<li>Policy Frameworks & AI Guidelines</li>
+<li>E-Governance & Library Advocacy</li>
+<li>Quality Assurance</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Assistive Technologies & Inclusion</h2>
+<div class="card"><ul>
+<li>Accessible Digital Content</li>
+<li>Inclusive Library Services</li>
+<li>Multilingual Access</li>
+<li>Adaptive Technologies</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Collaboration & Knowledge Ecosystems</h2>
+<div class="card"><ul>
+<li>Library Consortia</li>
+<li>Global Collaborations</li>
+<li>Knowledge Management</li>
+<li>Community Partnerships</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Digital Preservation & Cultural Heritage</h2>
+<div class="card"><ul>
+<li>Digitisation of Rare Collections</li>
+<li>Digital Humanities</li>
+<li>Preservation Strategies</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Ethical & Legal Frameworks</h2>
+<div class="card"><ul>
+<li>Copyright & IPR</li>
+<li>Research Ethics</li>
+<li>Data Privacy</li>
+<li>AI Ethics</li>
+</ul></div>
+</section>
+
+<section>
+<h2>Social Media & Digital Engagement</h2>
+<div class="card"><ul>
+<li>Library Outreach & Marketing</li>
+<li>Digital Engagement Tools</li>
+<li>Content Creation</li>
+<li>Information Literacy</li>
+</ul></div>
+</section>
+
+<footer>
+<p>© 2026 ILA Conference | University of Hyderabad</p>
+</footer>
+
+<script>
+let index=0;
+function moveSlide(step){const slides=document.getElementById('slides');const total=slides.children.length;index=(index+step+total)%total;slides.style.transform='translateX('+(-index*100)+'%)';}
+setInterval(()=>moveSlide(1),3000);
+</script>
+
+</body>
+</html>
