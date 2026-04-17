@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLARE 2026</title>
+
+<style>
+body {margin:0;font-family:Arial}
+
+/* Top Bar */
+.topbar {
+  background:#0b3d91;
+  color:white;
+  padding:5px 20px;
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+}
+
+/* Navbar */
+nav {
+  background:white;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid #ddd;
+}
+
+nav a {
+  text-decoration:none;
+  margin:0 10px;
+  color:#333;
+  font-weight:bold;
+}
+
+/* Banner Slider */
+.slider {
+  position:relative;
+  overflow:hidden;
+}
+
+.slides {
+  display:flex;
+  transition:0.5s;
+}
+
+.slides img {
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+.navbtn {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.5);
+  color:white;
+  border:none;
+  padding:10px;
+  cursor:pointer;
+}
+
+.prev {left:10px}
+.next {right:10px}
+
+/* Overlay Text */
+.banner-text {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  text-align:center;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:10px;
+}
+
+/* Sections */
+section {padding:30px}
+h2 {color:#0b3d91}
+
+/* Cards */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#f4f4f4;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* Footer */
+footer {
+  background:#0b3d91;
+  color:white;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+<div>University of Hyderabad, India</div>
+<div>Download | Login | Programme Schedule</div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+<div><b>FLARE 2026</b></div>
+<div>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Call for Papers</a>
+<a href="#">Registration</a>
+<a href="#">Committee</a>
+<a href="#">Sponsorship</a>
+</div>
+</nav>
+
+<!-- SLIDER -->
+<div class="slider">
+<div class="slides" id="slides">
+<img src="photo.jpg">
+<img src="hyd1.jpg">
+<img src="hyd2.jpg">
+</div>
+
+<button class="navbtn prev" onclick="move(-1)">❮</button>
+<button class="navbtn next" onclick="move(1)">❯</button>
+
+<div class="banner-text">
+<h1>FLARE 2026</h1>
+<p>Future Libraries: Advancing Research & Excellence</p>
+<p><b>University of Hyderabad</b></p>
+</div>
+</div>
+
+<!-- THEMES -->
+<section>
+<h2>Conference Themes</h2>
+
+<div class="grid">
+<div class="card">
+<b>Digital Transformation</b>
+<p>AI, ML, Cloud, Smart Libraries</p>
+</div>
+
+<div class="card">
+<b>Sustainability</b>
+<p>Green Libraries, SDGs</p>
+</div>
+
+<div class="card">
+<b>Open Science</b>
+<p>Repositories, Research Data</p>
+</div>
+</div>
+</section>
+
+<!-- IMPORTANT DATES -->
+<section>
+<h2>Important Dates</h2>
+<ul>
+<li>Submission: June 2026</li>
+<li>Acceptance: August 2026</li>
+<li>Registration: October 2026</li>
+</ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>Organised by University of Hyderabad</p>
+<p>Email: flare2026@gmail.com</p>
+</footer>
+
+<script>
+let index=0;
+function move(step){
+  const slides=document.getElementById('slides');
+  const total=slides.children.length;
+  index=(index+step+total)%total;
+  slides.style.transform='translateX('+(-index*100)+'%)';
+}
+setInterval(()=>move(1),3000);
+</script>
+
+</body>
+</html>
