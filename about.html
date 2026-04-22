@@ -21,23 +21,41 @@ font-weight:bold;
 }
 nav a:hover{color:#ffd166}
 
-.container{
-max-width:1000px;
-margin:auto;
-background:white;
-padding:40px;
-margin-top:40px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-line-height:1.7;
+/* HERO TITLE */
+.hero{
+background:url('flare-banner.png') center/cover;
+color:white;
+padding:80px 20px;
+text-align:center;
 }
+
+/* CONTENT */
+.container{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+.row{
+display:flex;
+gap:40px;
+align-items:center;
+margin-bottom:60px;
+}
+
+.row img{
+width:100%;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.col{flex:1; line-height:1.7}
 
 footer{
 background:#0a2a66;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
 }
 </style>
 </head>
@@ -53,28 +71,49 @@ margin-top:40px;
 <a href="sponsorship.html">Sponsorship</a>
 </nav>
 
-<div class="container">
-<h1>About the Conference</h1>
+<div class="hero">
+<h1>About FLARE 2026</h1>
+</div>
 
+<div class="container">
+
+<div class="row">
+<div class="col">
+<h2>About the Conference</h2>
 <p>
-The Indian Library Association (ILA) is proud to host its 72nd annual ILA International Conference 2026 in Hyderabad, in collaboration with the Indira Gandhi Memorial Library, University of Hyderabad. This international mega event will bring together librarians, information scientists, educators, and technology experts from across the globe.
+The Indian Library Association (ILA) is proud to host its 72nd annual ILA International Conference 2026 in Hyderabad, in collaboration with the Indira Gandhi Memorial Library, University of Hyderabad.
 </p>
 
 <p>
-The conference provides a vital platform to discuss the evolving landscape of libraries and their role in knowledge dissemination and community engagement.
+This international event brings together librarians, information scientists, educators, and technology experts from across the globe to discuss the evolving role of libraries in the digital age.
 </p>
 
 <p>
 <b>Theme:</b> Transforming Library Services in the AI Era: Library Services, User Engagement and Community Impact.
 </p>
+</div>
 
+<div class="col">
+<img src="flare-banner.png">
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<img src="flare-banner.png">
+</div>
+
+<div class="col">
+<h2>Why Attend?</h2>
 <p>
-Key focus areas include AI in libraries, user engagement, gamification, sustainability, social inclusion, cultural heritage preservation, and professional development for modern librarians.
+Participants will explore AI in libraries, digital transformation, sustainability, user engagement, research excellence, and the future of knowledge sharing.
 </p>
 
 <p>
-Join us in Hyderabad for an enriching experience of learning, networking, and collaboration.
+Join us in Hyderabad for learning, networking, and collaboration.
 </p>
+</div>
+</div>
 
 </div>
 
