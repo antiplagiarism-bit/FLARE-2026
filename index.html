@@ -1,179 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>FLARE 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FLARE 2026 | ILA Conference</title>
 
 <style>
 body{
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
 }
 
-/* TOP BAR */
-.topbar{
-  background:#0b2545;
-  color:white;
-  padding:6px 40px;
-  display:flex;
-  justify-content:space-between;
-  font-size:14px;
+/* HEADER */
+header{
+    background:#0a2a66;
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
-/* NAVBAR */
-nav{
-  background:white;
-  padding:15px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+header h1{
+    margin:5px;
+    font-size:32px;
 }
 
-nav a{
-  text-decoration:none;
-  margin-left:20px;
-  color:#0b2545;
-  font-weight:bold;
+header h2{
+    margin:5px;
+    font-weight:normal;
 }
 
-/* HERO BANNER */
-.hero {
-  height:420px;
-  background:#f2f2f2;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:20px 60px;
+/* HERO */
+.hero{
+    background:linear-gradient(to right,#0077b6,#00b4d8);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
-.hero img.side{
-  width:28%;
-  height:380px;
-  object-fit:cover;
-  border-radius:6px;
+.hero h1{
+    font-size:40px;
 }
 
-.hero-center{
-  width:44%;
-  text-align:center;
+.hero p{
+    font-size:20px;
 }
 
-.hero-center h2{
-  color:#1b3a6b;
-  font-size:36px;
-  margin:10px 0;
-}
-
-.hero-center h1{
-  font-size:55px;
-  color:#e63946;
-  margin:5px 0;
-}
-
-.hero-center h3{
-  color:#1b3a6b;
-  font-size:26px;
-}
-
-/* SECTION */
+/* SECTIONS */
 section{
-  padding:50px 80px;
-  text-align:center;
-}
-
-.grid{
-  display:flex;
-  justify-content:center;
-  gap:30px;
+    padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
 }
 
 .card{
-  width:260px;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    background:#ff6b00;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    font-size:18px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#ff8800;
 }
 
 /* FOOTER */
 footer{
-  background:#0b2545;
-  color:white;
-  padding:25px;
-  text-align:center;
+    background:#0a2a66;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div>University of Hyderabad, India</div>
-  <div>Download | Login | Programme Schedule</div>
-</div>
-
-<!-- NAVBAR -->
-<nav>
-  <div><b>FLARE 2026</b></div>
-  <div>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Call for Papers</a>
-    <a href="#">Registration</a>
-    <a href="#">Committee</a>
-    <a href="#">Sponsorship</a>
-  </div>
-</nav>
-
-<!-- HERO BANNER -->
-<section class="hero">
-  <img src="images/uoh-gate.jpg" class="side">
-
-  <div class="hero-center">
-    <h2>72nd ILA International Conference</h2>
+<header>
     <h1>FLARE 2026</h1>
-    <h3>University of Hyderabad<br>Hyderabad</h3>
-  </div>
+    <h2>Future Libraries: Advancing Research & Excellence</h2>
+</header>
 
-  <img src="images/uoh-building.jpg" class="side">
-</section>
+<div class="hero">
+    <h1>72nd Indian Library Association International Conference</h1>
+    <p>Libraries as Drivers of Sustainable Development</p>
+</div>
 
-<!-- THEMES -->
 <section>
-<h2>Conference Themes</h2>
-<div class="grid">
 
 <div class="card">
-<b>Digital Transformation</b>
-<p>AI, ML, Cloud, Smart Libraries</p>
-</div>
-
-<div class="card">
-<b>Sustainability</b>
-<p>Green Libraries, SDGs</p>
+<h2>📅 Conference Details</h2>
+<p><b>Date:</b> 2026</p>
+<p><b>Venue:</b> Seminar Hall, School of Social Sciences,<br>
+University of Hyderabad</p>
 </div>
 
 <div class="card">
-<b>Open Science</b>
-<p>Repositories, Research Data</p>
+<h2>🎯 Theme</h2>
+<p>
+Green Libraries • Digital Scholarship • AI in Libraries • Research Excellence • Sustainability
+</p>
 </div>
 
+<div class="card" style="text-align:center;">
+<h2>📝 Register Now</h2>
+<a href="#" class="btn">Registration Opening Soon</a>
 </div>
+
 </section>
 
-<!-- IMPORTANT DATES -->
-<section>
-<h2>Important Dates</h2>
-<p>Submission: June 2026</p>
-<p>Acceptance: August 2026</p>
-<p>Registration: October 2026</p>
-</section>
-
-<!-- FOOTER -->
 <footer>
-<p>72nd Indian Library Association International Conference</p>
-<p>Organised by University of Hyderabad</p>
-<p>Email: flare2026@gmail.com</p>
+© 2026 FLARE Conference | University of Hyderabad & ILA
 </footer>
 
 </body>
