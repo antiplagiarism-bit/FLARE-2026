@@ -1,73 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FLARE 2026 | ILA Conference</title>
+<title>FLARE 2026 Conference</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#f4f7fb}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fb}
+
+/* TOP CONTACT BAR */
+.topbar{
+background:#f37021;
+color:white;
+padding:8px 20px;
+font-size:14px;
+display:flex;
+justify-content:space-between;
+}
 
 /* NAVBAR */
 nav{
-background:#0a2a66;
-padding:15px;
-text-align:center;
+background:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
-nav a{
-color:white;
+
+.menu a{
 margin:15px;
 text-decoration:none;
-font-size:18px;
+color:#333;
 font-weight:bold;
 }
-nav a:hover{color:#ffd166}
+.menu a:hover{color:#f37021}
 
-/* HEADER */
-header{background:#0077b6;color:white;text-align:center;padding:60px}
-.hero{background:linear-gradient(to right,#0077b6,#00b4d8);color:white;text-align:center;padding:50px}
+/* HERO SECTION */
+.hero{
+height:500px;
+background:url('flare-banner.png') center/cover no-repeat;
+position:relative;
+display:flex;
+align-items:center;
+}
 
-section{padding:40px;max-width:1000px;margin:auto}
-.card{background:white;padding:25px;margin:20px 0;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+.overlay{
+background:rgba(0,0,60,0.7);
+padding:60px;
+color:white;
+max-width:600px;
+margin-left:50px;
+border-radius:10px;
+}
 
-footer{background:#0a2a66;color:white;text-align:center;padding:15px}
+.overlay h1{font-size:42px;margin:0}
+.overlay h2{font-weight:normal}
+
+.btn{
+background:#f37021;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+margin-top:15px;
+}
+
+/* CONTENT */
+section{padding:60px;text-align:center}
+.card-container{display:flex;gap:20px;justify-content:center}
+.card{
+background:white;
+padding:25px;
+width:300px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+background:#0a2a66;
+color:white;
+text-align:center;
+padding:20px;
+}
 </style>
 </head>
 
 <body>
 
+<div class="topbar">
+<div>📞 +91 79 2326 8251 | ✉ flare2026@uohyd.ac.in</div>
+<div>Login / Register</div>
+</div>
+
 <nav>
+<h2>FLARE 2026</h2>
+<div class="menu">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="papers.html">Call for Papers</a>
 <a href="registration.html">Registration</a>
 <a href="committee.html">Committee</a>
 <a href="sponsorship.html">Sponsorship</a>
+</div>
 </nav>
 
-<header>
-<h1>FLARE 2026</h1>
-<h2>Future Libraries: Advancing Research & Excellence</h2>
-</header>
-<img src="flare-banner.png" style="width:100%;max-height:400px;object-fit:cover;">
-<section>
+<div class="hero">
+<div class="overlay">
+<h1>Library 2047: Transforming Knowledge</h1>
+<h2>72nd Indian Library Association International Conference</h2>
+<p>University of Hyderabad • 2026</p>
+<a href="registration.html" class="btn">Register Now</a>
+</div>
+</div>
 
+<section>
+<h2>Conference Highlights</h2>
+
+<div class="card-container">
 <div class="card">
-<h2>📅 Conference Details</h2>
-<p><b>Date:</b> 2026</p>
-<p><b>Venue:</b> University of Hyderabad</p>
+<h3>📅 Conference</h3>
+<p>International gathering of librarians and researchers.</p>
 </div>
 
 <div class="card">
-<h2>🎯 Theme</h2>
-<p>Libraries as Drivers of Sustainable Development</p>
+<h3>🎯 Theme</h3>
+<p>Transforming Library Services in the AI Era.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Global Event</h3>
+<p>Participants from across the world.</p>
+</div>
 </div>
 
 </section>
 
 <footer>
-© 2026 FLARE Conference
+© FLARE 2026 | University of Hyderabad & ILA
 </footer>
 
 </body>
