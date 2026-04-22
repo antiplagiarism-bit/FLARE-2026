@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>FLARE 2026 | Indian Library Association Conference | University of Hyderabad</title>
-
-<meta name="description" content="FLARE 2026 – 72nd Indian Library Association International Conference organized by University of Hyderabad. Future Libraries: Advancing Research & Excellence.">
+<title>FLARE 2026</title>
 
 <style>
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* TOP BAR */
 .topbar{
-  background:#0b3d91;
+  background:#0b2545;
   color:white;
-  padding:6px 20px;
+  padding:6px 40px;
   display:flex;
   justify-content:space-between;
   font-size:14px;
@@ -27,86 +22,81 @@ body{
 /* NAVBAR */
 nav{
   background:white;
-  padding:15px 20px;
+  padding:15px 40px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  border-bottom:2px solid #ddd;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
 nav a{
   text-decoration:none;
-  margin:0 12px;
-  color:#333;
+  margin-left:20px;
+  color:#0b2545;
   font-weight:bold;
 }
 
-/* HERO FULL BANNER */
-.hero{
-  width:100%;
-  min-height:100vh;
-  background-image:url('flare-banner.png');
-  background-size:contain;     /* IMPORTANT: shows full image */
-  background-position:center top;
-  background-repeat:no-repeat;
-  background-color:#000;       /* fills empty space nicely */
+/* HERO BANNER */
+.hero {
+  height:420px;
+  background:#f2f2f2;
   display:flex;
-  align-items:flex-end;        /* moves text to bottom */
-  justify-content:center;
-  padding-bottom:60px;
-  position:relative;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 60px;
 }
 
-/* overlay */
-.hero::before{
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.35);
+.hero img.side{
+  width:28%;
+  height:380px;
+  object-fit:cover;
+  border-radius:6px;
 }
 
-/* hero text */
-.hero-text{
-  position:relative;
-  color:white;
+.hero-center{
+  width:44%;
   text-align:center;
 }
 
-.hero-text h1{
-  font-size:48px;
-  margin:0;
+.hero-center h2{
+  color:#1b3a6b;
+  font-size:36px;
+  margin:10px 0;
 }
 
-.hero-text p{
-  font-size:22px;
+.hero-center h1{
+  font-size:55px;
+  color:#e63946;
+  margin:5px 0;
 }
 
-/* SECTIONS */
+.hero-center h3{
+  color:#1b3a6b;
+  font-size:26px;
+}
+
+/* SECTION */
 section{
-  padding:40px 30px;
+  padding:50px 80px;
+  text-align:center;
 }
 
-h2{
-  color:#0b3d91;
-}
-
-/* CARDS */
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
 }
 
 .card{
-  background:#f4f4f4;
+  width:260px;
   padding:20px;
   border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
 footer{
-  background:#0b3d91;
+  background:#0b2545;
   color:white;
   padding:25px;
   text-align:center;
@@ -126,21 +116,26 @@ footer{
 <nav>
   <div><b>FLARE 2026</b></div>
   <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="call-for-papers.html">Call for Papers</a>
-    <a href="registration.html">Registration</a>
-    <a href="committee.html">Committee</a>
-    <a href="sponsorship.html">Sponsorship</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Call for Papers</a>
+    <a href="#">Registration</a>
+    <a href="#">Committee</a>
+    <a href="#">Sponsorship</a>
   </div>
 </nav>
 
 <!-- HERO BANNER -->
 <section class="hero">
-  <div class="hero-text">
+  <img src="images/uoh-gate.jpg" class="side">
+
+  <div class="hero-center">
+    <h2>72nd ILA International Conference</h2>
     <h1>FLARE 2026</h1>
-    <p>72nd Indian Library Association International Conference</p>
+    <h3>University of Hyderabad<br>Hyderabad</h3>
   </div>
+
+  <img src="images/uoh-building.jpg" class="side">
 </section>
 
 <!-- THEMES -->
@@ -169,11 +164,9 @@ footer{
 <!-- IMPORTANT DATES -->
 <section>
 <h2>Important Dates</h2>
-<ul>
-<li>Submission: June 2026</li>
-<li>Acceptance: August 2026</li>
-<li>Registration: October 2026</li>
-</ul>
+<p>Submission: June 2026</p>
+<p>Acceptance: August 2026</p>
+<p>Registration: October 2026</p>
 </section>
 
 <!-- FOOTER -->
