@@ -41,11 +41,43 @@ nav a{
   font-weight:bold;
 }
 
-/* BANNER IMAGE */
-.banner img{
+/* HERO FULL BANNER */
+.hero{
   width:100%;
-  height:420px;
-  object-fit:cover;
+  height:100vh;
+  background-image:url('flare-banner.png');
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+/* overlay */
+.hero::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.35);
+}
+
+/* hero text */
+.hero-text{
+  position:relative;
+  color:white;
+  text-align:center;
+}
+
+.hero-text h1{
+  font-size:48px;
+  margin:0;
+}
+
+.hero-text p{
+  font-size:22px;
 }
 
 /* SECTIONS */
@@ -101,10 +133,13 @@ footer{
   </div>
 </nav>
 
-<!-- BANNER IMAGE -->
-<div class="banner">
-  <img src="/FLARE-2026/flare-banner.png" alt="FLARE Banner">
-</div>
+<!-- HERO BANNER -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>FLARE 2026</h1>
+    <p>72nd Indian Library Association International Conference</p>
+  </div>
+</section>
 
 <!-- THEMES -->
 <section>
