@@ -3,143 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FLARE 2026 Conference</title>
+<title>FLARE 2027 | 72nd ILA International Conference</title>
 
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fb}
-
-/* TOP CONTACT BAR */
-.topbar{
-background:#f37021;
-color:white;
-padding:8px 20px;
-font-size:14px;
-display:flex;
-justify-content:space-between;
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
 }
 
 /* NAVBAR */
 nav{
-background:white;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:10px 40px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    background:#002147;
+    padding:15px;
+    text-align:center;
 }
-
-.menu a{
-margin:15px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
 }
-.menu a:hover{color:#f37021}
+nav a:hover{ color:#ffd700; }
 
-/* HERO SECTION */
+/* HERO */
 .hero{
-height:500px;
-background:url('flare-banner.png') center/cover no-repeat;
-position:relative;
-display:flex;
-align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:#f4f6fa;
+}
+.hero img{
+    width:200px;
+}
+.hero h1{
+    color:#002147;
+    font-size:36px;
+}
+.hero h2{ color:#b30000; }
+
+/* SECTIONS */
+.section{
+    padding:50px 80px;
+}
+.section h2{
+    color:#002147;
+    border-bottom:3px solid #ffd700;
+    display:inline-block;
+    padding-bottom:5px;
 }
 
-.overlay{
-background:rgba(0,0,60,0.7);
-padding:60px;
-color:white;
-max-width:600px;
-margin-left:50px;
-border-radius:10px;
+/* DATES TABLE */
+table{
+    width:60%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
-
-.overlay h1{font-size:42px;margin:0}
-.overlay h2{font-weight:normal}
-
-.btn{
-background:#f37021;
-padding:12px 25px;
-color:white;
-text-decoration:none;
-border-radius:5px;
-display:inline-block;
-margin-top:15px;
-}
-
-/* CONTENT */
-section{padding:60px;text-align:center}
-.card-container{display:flex;gap:20px;justify-content:center}
-.card{
-background:white;
-padding:25px;
-width:300px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+table, th, td{
+    border:1px solid #ccc;
+    padding:10px;
 }
 
 /* FOOTER */
 footer{
-background:#0a2a66;
-color:white;
-text-align:center;
-padding:20px;
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-<div>📞 +91 79 2326 8251 | ✉ flare2026@uohyd.ac.in</div>
-<div>Login / Register</div>
-</div>
-
+<!-- NAVBAR -->
 <nav>
-<h2>FLARE 2026</h2>
-<div class="menu">
-<a href="index.html">Home</a>
+<a href="#">Home</a>
 <a href="about.html">About</a>
 <a href="papers.html">Call for Papers</a>
+<a href="committee.html">Committees</a>
 <a href="registration.html">Registration</a>
-<a href="committee.html">Committee</a>
-<a href="sponsorship.html">Sponsorship</a>
-</div>
+<a href="venue.html">Venue</a>
+<a href="contact.html">Contact</a>
 </nav>
 
-<div class="hero">
-<div class="overlay">
-<h1>Library 2047: Transforming Knowledge</h1>
-<h2>72nd Indian Library Association International Conference</h2>
-<p>University of Hyderabad • 2026</p>
-<a href="registration.html" class="btn">Register Now</a>
-</div>
-</div>
+<!-- HERO SECTION -->
+<section class="hero">
+<img src="images/logo.png" alt="FLARE 2027 Logo">
 
-<section>
-<h2>Conference Highlights</h2>
+<h1>72nd ILA International Conference</h1>
+<h2>Future Libraries: Advancing Research & Excellence</h2>
 
-<div class="card-container">
-<div class="card">
-<h3>📅 Conference</h3>
-<p>International gathering of librarians and researchers.</p>
-</div>
+<p><b>University of Hyderabad, India</b></p>
+<p><b>7–9 January 2027</b></p>
+</section>
 
-<div class="card">
-<h3>🎯 Theme</h3>
-<p>Transforming Library Services in the AI Era.</p>
-</div>
+<!-- ABOUT -->
+<section class="section">
+<h2>About the Conference</h2>
+<p>
+The 72nd International Conference of the Indian Library Association (ILA) 
+brings together librarians, researchers, academicians and technology experts 
+from across the globe to explore the future of libraries in the digital era.
+</p>
+</section>
 
-<div class="card">
-<h3>🌍 Global Event</h3>
-<p>Participants from across the world.</p>
-</div>
-</div>
+<!-- OBJECTIVES -->
+<section class="section" style="background:#f4f6fa;">
+<h2>Conference Objectives</h2>
+<ul>
+<li>Promote innovation in library services</li>
+<li>Strengthen research support and scholarly communication</li>
+<li>Discuss AI, digital libraries and data management</li>
+<li>Encourage collaboration among LIS professionals</li>
+</ul>
+</section>
 
+<!-- THEMES -->
+<section class="section">
+<h2>Conference Themes</h2>
+<ul>
+<li>Artificial Intelligence in Libraries</li>
+<li>Digital Libraries & Institutional Repositories</li>
+<li>Research Data Management</li>
+<li>Open Access & Scholarly Communication</li>
+<li>Library Automation & Smart Libraries</li>
+<li>Knowledge Management & Information Literacy</li>
+</ul>
+</section>
+
+<!-- IMPORTANT DATES -->
+<section class="section" style="background:#f4f6fa;">
+<h2>Important Dates</h2>
+<table>
+<tr><th>Activity</th><th>Date</th></tr>
+<tr><td>Call for Papers Opens</td><td>1 June 2026</td></tr>
+<tr><td>Paper Submission Deadline</td><td>30 Sept 2026</td></tr>
+<tr><td>Acceptance Notification</td><td>15 Nov 2026</td></tr>
+<tr><td>Early Bird Registration</td><td>30 Nov 2026</td></tr>
+<tr><td><b>Conference Dates</b></td><td><b>7–9 Jan 2027</b></td></tr>
+</table>
 </section>
 
 <footer>
-© FLARE 2026 | University of Hyderabad & ILA
+© FLARE 2027 | Indian Library Association | University of Hyderabad
 </footer>
 
 </body>
