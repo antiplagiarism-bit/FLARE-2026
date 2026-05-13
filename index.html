@@ -1,153 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FLARE 2027 | 72nd ILA International Conference</title>
+<title>FLARE 2027 – University of Hyderabad</title>
 
 <style>
-body{margin:0;font-family:Arial, Helvetica, sans-serif;line-height:1.6}
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 
-/* NAVBAR */
+    /* Library background */
+    background: linear-gradient(rgba(255,255,255,0.92),
+                rgba(255,255,255,0.92)),
+                url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header{
+    background:#002147;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    align-items:center;
+}
+
+/* Logo */
+.logo{
+    height:70px;
+    margin-right:20px;
+}
+
+/* Title */
+.title h1{
+    margin:0;
+    font-size:28px;
+}
+.title h2{
+    margin:0;
+    font-size:18px;
+    font-weight:normal;
+}
+
+/* Navigation */
 nav{
-background:#002147;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
+    background:#004080;
+    padding:12px;
+    text-align:center;
 }
 nav a{
-color:white;
-margin:18px;
-text-decoration:none;
-font-weight:bold;
-font-size:17px;
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+    font-size:16px;
 }
-nav a:hover{color:#ffd700}
+nav a:hover{
+    color:yellow;
+}
 
-/* HERO BANNER */
+/* Hero Section */
 .hero{
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
-background-size:cover;
-color:white;
-text-align:center;
-padding:90px 20px;
+    text-align:center;
+    padding:80px 20px;
 }
-.hero img{width:160px;background:white;padding:10px;border-radius:10px}
-.hero h1{font-size:42px;margin:15px 0}
-.hero h2{color:#ffd700}
-
-/* SECTIONS */
-.section{padding:60px 80px}
-.section h2{
-color:#002147;
-border-bottom:3px solid #ffd700;
-display:inline-block;
-padding-bottom:6px;
+.hero h1{
+    font-size:42px;
+    color:#002147;
+}
+.hero h2{
+    color:#444;
 }
 
-/* HIGHLIGHTS */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-margin-top:30px;
-}
-.card{
-background:#f4f6fa;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px #ddd;
-}
-
-/* TABLE */
-table{width:70%;border-collapse:collapse;margin-top:20px}
-table,th,td{border:1px solid #ccc;padding:10px;text-align:center}
-
-/* FOOTER */
-footer{
-background:#002147;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:30px;
+/* Content box */
+.content{
+    background:white;
+    width:80%;
+    margin:auto;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 10px #aaa;
+    margin-bottom:50px;
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- HEADER WITH LOGO -->
+<div class="header">
+    <img src="logo.png" class="logo">
+    <div class="title">
+        <h1>72nd ILA International Conference</h1>
+        <h2>FLARE 2027 – Future Libraries: Advancing Research & Excellence</h2>
+    </div>
+</div>
+
+<!-- MENU -->
 <nav>
-<a href="#">Home</a>
-<a href="about.html">About</a>
-<a href="papers.html">Call for Papers</a>
-<a href="committee.html">Committees</a>
-<a href="registration.html">Registration</a>
-<a href="venue.html">Venue</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="committee.html">Committee</a>
+    <a href="papers.html">Call for Papers</a>
+    <a href="registration.html">Registration</a>
+    <a href="sponsorship.html">Sponsorship</a>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-<img src="images/logo.png">
-<h1>72nd ILA International Conference – FLARE 2027</h1>
-<h2>Future Libraries: Advancing Research & Excellence</h2>
-<p>University of Hyderabad, India | 7–9 January 2027</p>
-</section>
-
-<!-- ABOUT -->
-<section class="section">
-<h2>About FLARE 2027</h2>
-<p>
-FLARE-2027 brings together library professionals, researchers,
-academicians and industry experts to discuss innovations shaping the
-future of libraries, digital scholarship and knowledge ecosystems.
-</p>
-</section>
-
-<!-- HIGHLIGHTS -->
-<section class="section" style="background:#f4f6fa">
-<h2>Conference Highlights</h2>
-
-<div class="grid">
-<div class="card">📚 Keynote Speakers from Global Institutions</div>
-<div class="card">🤖 AI & Digital Libraries Sessions</div>
-<div class="card">📊 Research Data Management Workshops</div>
-<div class="card">🌍 International Participation</div>
+<div class="hero">
+    <h1>Welcome to FLARE 2027</h1>
+    <h2>University of Hyderabad | 07–09 January 2027</h2>
 </div>
-</section>
 
-<!-- THEMES -->
-<section class="section">
-<h2>Conference Themes</h2>
-<ul>
-<li>Artificial Intelligence in Libraries</li>
-<li>Digital Libraries & Institutional Repositories</li>
-<li>Research Data Management</li>
-<li>Scholarly Communication & Open Access</li>
-<li>Smart Libraries & Automation</li>
-<li>Information Literacy & Knowledge Management</li>
-</ul>
-</section>
+<!-- MAIN CONTENT -->
+<div class="content">
+    <h2>About the Conference</h2>
+    <p>
+    The 72nd ILA International Conference on
+    <b>Future Libraries: Advancing Research & Excellence (FLARE 2027)</b>
+    will be hosted by the <b>IGM Library, University of Hyderabad</b>.
+    </p>
 
-<!-- IMPORTANT DATES -->
-<section class="section" style="background:#f4f6fa">
-<h2>Important Dates</h2>
-<table>
-<tr><th>Activity</th><th>Date</th></tr>
-<tr><td>Call for Papers Opens</td><td>1 June 2026</td></tr>
-<tr><td>Submission Deadline</td><td>30 Sept 2026</td></tr>
-<tr><td>Acceptance Notification</td><td>15 Nov 2026</td></tr>
-<tr><td>Early Bird Registration</td><td>30 Nov 2026</td></tr>
-<tr><td><b>Conference Dates</b></td><td><b>7–9 Jan 2027</b></td></tr>
-</table>
-</section>
+    <p>
+    The conference will bring together librarians, researchers,
+    academicians and professionals to discuss emerging trends,
+    innovations and future directions of libraries.
+    </p>
 
-<footer>
-© FLARE 2027 | Indian Library Association | University of Hyderabad
-</footer>
+    <h3>Venue</h3>
+    <p>IGM Library, University of Hyderabad, India</p>
+</div>
 
 </body>
 </html>
