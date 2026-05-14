@@ -1,177 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FLARE 2027 | 72nd ILA International Conference</title>
+<title>FLARE 2027 – University of Hyderabad</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     line-height:1.6;
-    background:#f5f7fb;
 }
 
-header{
+/* ---------- NAVBAR ---------- */
+.navbar{
     background:#002147;
     color:white;
-    padding:40px 20px;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#ffd700;
+}
+
+/* ---------- HERO BANNER ---------- */
+.hero{
+    height:500px;
+    background-image: url("banner.png");   /* upload your banner image */
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    color:white;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.65);
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     text-align:center;
+    z-index:1;
 }
 
-header h1{margin:0;font-size:34px;}
-header h2{margin:10px 0 0;font-weight:normal;}
-
-section{
-    padding:40px;
-    max-width:1100px;
-    margin:auto;
-    background:white;
-    margin-top:20px;
-    border-radius:10px;
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
 }
 
-h2{
+.hero h2{
+    font-weight:normal;
+}
+
+/* ---------- SECTION ---------- */
+.section{
+    padding:60px 80px;
+}
+
+.section h2{
     color:#002147;
-    border-bottom:3px solid #f4b400;
-    padding-bottom:8px;
+    border-left:6px solid #ffd700;
+    padding-left:15px;
 }
 
-ul{margin-left:20px;}
-li{margin:6px 0;}
-
-.committee{
-    columns:2;
+.light{
+    background:#f4f6f9;
 }
 
-footer{
+/* ---------- FOOTER ---------- */
+.footer{
+    background:#002147;
+    color:white;
     text-align:center;
     padding:20px;
-    background:#002147;
-    color:white;
-    margin-top:20px;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>72nd ILA International Conference</h1>
-<h2>Future Libraries: Advancing Research & Excellence (FLARE) 2027</h2>
-<h3>7–9 January 2027</h3>
-</header>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#themes">Themes</a>
+  <a href="#committee">Committee</a>
+  <a href="#contact">Contact</a>
+</div>
 
-<section>
-<h2>Theme 1: Libraries as Drivers of Sustainable Development</h2>
+<!-- HERO BANNER -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>72nd ILA International Conference</h1>
+    <h2>Future Libraries: Advancing Research & Excellence (FLARE-2027)</h2>
+    <h3>7 – 9 January 2027 | University of Hyderabad</h3>
+  </div>
+</div>
+
+<!-- ABOUT CONFERENCE -->
+<div class="section" id="about">
+<h2>About Conference</h2>
+
+<p>
+The Indian Library Association (ILA) is honoured to host its 72nd Annual Conference 2027 in the historic City of Pearls in collaboration with the University of Hyderabad. This premier international summit serves as a global nexus for librarians, information scientists, academicians and technology innovators.
+</p>
+
+<p>
+The conference theme <b>Future Libraries: Advancing Research & Excellence (FLARE-2027)</b> focuses on emerging and trending topics including Sustainable Libraries, Artificial Intelligence, Assistive Technologies, Research Support and Digital Transformation.
+</p>
+</div>
+
+<!-- THEMES -->
+<div class="section light" id="themes">
+<h2>Conference Themes</h2>
+
+<h3>1. Libraries as Drivers of Sustainable Development</h3>
 <ul>
-<li>Green Libraries: Design, Energy Efficiency & Infrastructure</li>
-<li>Libraries & Sustainable Development Goals (SDGs)</li>
-<li>Digital Preservation for Long-Term Knowledge Sustainability</li>
-<li>Carbon-Neutral Library Operations</li>
-<li>Smart Libraries and IoT for Energy Management</li>
-<li>AI Applications for Sustainable Library Operations</li>
+<li>Green Libraries & Sustainable Infrastructure</li>
+<li>Libraries and Sustainable Development Goals</li>
+<li>Digital Preservation for Knowledge Sustainability</li>
+<li>Smart Libraries and IoT</li>
 </ul>
 
-<h2>Theme 2: AI, Machine Learning & Digital Transformation</h2>
+<h3>2. AI & Digital Transformation in Libraries</h3>
 <ul>
-<li>AI & ML for Library Services</li>
-<li>Cloud-based Library Services</li>
+<li>Artificial Intelligence & Machine Learning</li>
 <li>Semantic Web & Linked Data</li>
-<li>Blockchain in Libraries</li>
-<li>AR/VR & IoT in Smart Libraries</li>
-<li>Ethical AI & Responsible Technology</li>
+<li>Blockchain Applications</li>
+<li>AR/VR & Smart Libraries</li>
 </ul>
 
-<h2>Theme 3: Research Support & Scholarly Communication</h2>
+<h3>3. Research Support & Scholarly Communication</h3>
 <ul>
 <li>Open Access & Open Science</li>
 <li>Research Data Management</li>
 <li>Institutional Repositories</li>
 <li>Bibliometrics & Altmetrics</li>
-<li>Plagiarism & Academic Integrity</li>
 </ul>
 
-<h2>Theme 4: Policy & Future-Ready Librarianship</h2>
-<ul>
-<li>Leadership Models</li>
-<li>Policy for Generative AI</li>
-<li>E-Governance in Libraries</li>
-<li>Quality Assurance & Accreditation</li>
-</ul>
-
-<h2>Theme 5: Assistive Technologies & Inclusion</h2>
+<h3>4. Assistive Technologies & Inclusive Libraries</h3>
 <ul>
 <li>Accessible Digital Content</li>
-<li>Adaptive Technologies</li>
-<li>Diversity & Inclusive Education</li>
+<li>Inclusive Policies</li>
+<li>Multilingual Access</li>
 </ul>
 
-<h2>Theme 6: Collaborative Knowledge Networks</h2>
-<ul>
-<li>Library Consortia & Resource Sharing</li>
-<li>Global Library Collaborations</li>
-<li>Citizen Science & Knowledge Systems</li>
-</ul>
-
-<h2>Theme 7: Digital Preservation & Cultural Heritage</h2>
-<ul>
-<li>Digitisation of Rare Collections</li>
-<li>Digital Humanities</li>
-<li>Archives & Information Sustainability</li>
-</ul>
-
-<h2>Theme 8: Ethical & Legal Frameworks</h2>
-<ul>
-<li>Copyright & Fair Use</li>
-<li>Predatory Publishing</li>
-<li>Data Privacy & User Rights</li>
-<li>Creative Commons Licensing</li>
-</ul>
-
-<h2>Theme 9: New Media & Library Outreach</h2>
-<ul>
-<li>Social Media for Library Engagement</li>
-<li>Digital Marketing & Analytics</li>
-<li>Combating Misinformation</li>
-</ul>
-</section>
-
-<section>
-<h2>Local Organizing Committee</h2>
-<div class="committee">
-<ul>
-<li>Shri B. Srinivas – Finance Officer, UoH</li>
-<li>Dr. Sanjay Kumar Sharma – Director CNF, UoH</li>
-<li>Shri Srinivasa Rao – Joint Registrar</li>
-<li>Shri Abhishek Kumar – Deputy Registrar</li>
-<li>Shri A. Praveen Kumar Prasad – Joint Registrar</li>
-<li>Shri B. Chandrasekhar – Deputy Registrar</li>
-<li>Mr. Ashish Jacob Thomas – PRO</li>
-<li>Captain Ravindra Kumar – CMO</li>
-<li>Dr. Vineeta Jain – MJPRU Bareilly</li>
-<li>Dr. V. Venkateswarlu – Assistant Librarian</li>
-<li>Mr. G. Rangappa Naidu – Assistant Librarian</li>
-<li>Mr. S. Sreekumar – Assistant Librarian</li>
-<li>Dr. Renuka Mulimani – Assistant Librarian</li>
-<li>Mr. Ankit Gupta – Assistant Librarian</li>
-<li>Ms. Deeksha Dua – Assistant Librarian</li>
-<li>Dr. J. Vivekavardhan – Osmania University</li>
-<li>Dr. A.S. Chakravarthy – Osmania University</li>
-<li>Dr. Mohammad Adil Khan – MANUU</li>
-<li>Dr. Bhojaraju Gunjal – IIT Hyderabad</li>
-<li>Dr. Muralidhar G – IIIT Hyderabad</li>
-<li>Dr. Indrasena Reddy – KITS Warangal</li>
-<li>Mr. Thukaram K – EFLU Hyderabad</li>
-<li>All IGM Library Staff</li>
-</ul>
 </div>
-</section>
 
-<footer>
-© FLARE 2027 | University of Hyderabad | Indian Library Association
-</footer>
+<!-- COMMITTEE -->
+<div class="section" id="committee">
+<h2>Local Organizing Committee</h2>
+
+<p>
+Shri B. Srinivas – Finance Officer, University of Hyderabad<br>
+Dr. Sanjay Kumar Sharma – Director CNF, University of Hyderabad<br>
+Shri Srinivasa Rao – Joint Registrar, University of Hyderabad<br>
+Shri Abhishek Kumar – Deputy Registrar, University of Hyderabad<br>
+Dr. V. Venkateswarlu – Assistant Librarian, UoH<br>
+Mr. G. Rangappa Naidu – Assistant Librarian, UoH<br>
+Mr. S. Sreekumar – Assistant Librarian, UoH<br>
+Dr. Renuka S. Mulimani – Assistant Librarian, UoH<br>
+Dr. Bhojaraju Gunjal – IIT Hyderabad<br>
+Dr. Murali Prasad – CESS Hyderabad<br>
+Dr. Srinivasulu – Vardhaman College of Engineering<br>
+And All IGM Library Staff
+</p>
+
+</div>
+
+<!-- CONTACT -->
+<div class="section light" id="contact">
+<h2>Contact</h2>
+<p>
+Indira Gandhi Memorial Library<br>
+University of Hyderabad<br>
+Email: flare2027@uohyd.ac.in
+</p>
+</div>
+
+<div class="footer">
+© FLARE 2027 | University of Hyderabad
+</div>
 
 </body>
 </html>
